@@ -1,0 +1,71 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "data": {
+          "region": "Region",
+          "username": "Email",
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reauthentiaction required for Owlet",
+        "data": {
+          "password": "[%key:common::config_flow::data::password%]"
+        }
+      }
+    },
+    "error": {
+      "no_devices": "No devices found",
+      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
+      "invalid_email": "Entered email address is incorrect",
+      "invalid_password": "Entered password is incorrect",
+      "invalid_credentials": "Entered credentials are incorrect",
+      "unknown": "Unknown error occured"
+    },
+    "abort": {
+      "already_configured": "Device already configured",
+      "reauth_successful": "Reauthentication successful"
+    }
+  },
+  "entity": {
+    "sensor": {
+      "batterypercent": {
+        "name": "Battery percentage"
+      },
+      "signalstrength": {
+        "name": "Signal strength"
+      },
+      "o2saturation": {
+        "name": "O2 saturation"
+      },
+      "o2saturation10a": {
+        "name": "O2 saturation 10 minute average"
+      },
+      "heartrate": {
+        "name": "Heart rate"
+      },
+      "batterymin": {
+        "name": "Battery remaining"
+      },
+      "skintemp": {
+        "name": "Skin temperature"
+      },
+      "sleepstate": {
+        "name": "Sleep state",
+        "state": {
+          "unknown": "Unknown",
+          "awake": "Awake",
+          "light_sleep": "Light sleep",
+          "deep_sleep": "Deep sleep"
+        }
+      },
+      "movement": {
+        "name": "Movement"
+      },
+      "movementbucket": {
+        "name": "Movement bucket"
+      }
+    }
+  }
+}
