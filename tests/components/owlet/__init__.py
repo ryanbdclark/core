@@ -13,9 +13,9 @@ from homeassistant.components.owlet.const import (
 )
 from homeassistant.const import (
     CONF_API_TOKEN,
+    CONF_EMAIL,
     CONF_REGION,
     CONF_SCAN_INTERVAL,
-    CONF_USERNAME,
 )
 from homeassistant.core import HomeAssistant
 
@@ -35,7 +35,7 @@ async def async_init_integration(
         unique_id="sample@gmail.com",
         data={
             CONF_REGION: "europe",
-            CONF_USERNAME: "sample@gmail.com",
+            CONF_EMAIL: "sample@gmail.com",
             CONF_API_TOKEN: "api_token",
             CONF_OWLET_EXPIRY: 100,
             CONF_OWLET_REFRESH: "refresh_token",

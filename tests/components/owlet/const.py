@@ -9,6 +9,6 @@ AUTH_RETURN = {
 
 CONF_INPUT = {
     "region": "europe",
-    "username": "sample@gmail.com",
+    "email": "sample@gmail.com",
     "password": "sample",
 }

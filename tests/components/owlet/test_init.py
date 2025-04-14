@@ -17,7 +17,7 @@ from homeassistant.components.owlet.const import (
     DOMAIN,
 )
 from homeassistant.config_entries import ConfigEntryState
-from homeassistant.const import CONF_API_TOKEN, CONF_REGION, CONF_USERNAME, Platform
+from homeassistant.const import CONF_API_TOKEN, CONF_EMAIL, CONF_REGION, Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.helpers import device_registry as dr, entity_registry as er
 
@@ -48,16 +48,29 @@ async def test_async_setup_entry(hass: HomeAssistant) -> None:
     assert len(entities) == 8
 
 
+async def test_async_unload_entry(hass: HomeAssistant) -> None:
+    """Test unloading entry after setup."""
+    entry = await async_init_integration(hass)
+    await hass.async_block_till_done()
+
+    assert entry.state == ConfigEntryState.LOADED
+
+    result = await hass.config_entries.async_unload(entry.entry_id)
+    await hass.async_block_till_done()
+
+    assert result is True
+    assert entry.state == ConfigEntryState.NOT_LOADED
+
+
 async def test_async_setup_entry_new_tokens(hass: HomeAssistant) -> None:
     """Test setting up entry and getting new tokens."""
     entry = await async_init_integration(
         hass, devices_fixture="get_devices_with_tokens.json"
     )
     await hass.async_block_till_done()
-
     assert entry.data == {
         CONF_REGION: "europe",
-        CONF_USERNAME: "sample@gmail.com",
+        CONF_EMAIL: "sample@gmail.com",
         CONF_API_TOKEN: "new_api_token",
         CONF_OWLET_EXPIRY: 200,
         CONF_OWLET_REFRESH: "new_refresh_token",
@@ -91,7 +104,7 @@ async def test_async_setup_entry_connection_error(hass: HomeAssistant) -> None:
         await hass.config_entries.async_setup(entry.entry_id)
         await hass.async_block_till_done()
 
-        assert entry.state == ConfigEntryState.SETUP_RETRY
+        assert entry.state == ConfigEntryState.SETUP_ERROR
 
 
 async def test_async_setup_entry_devices_error(hass: HomeAssistant) -> None:

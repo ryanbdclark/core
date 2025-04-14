@@ -12,9 +12,13 @@ from pyowletapi.exceptions import (
 )
 
 from homeassistant import config_entries
-from homeassistant.components.owlet.const import DOMAIN
+from homeassistant.components.owlet.const import (
+    CONF_OWLET_EXPIRY,
+    CONF_OWLET_REFRESH,
+    DOMAIN,
+)
 from homeassistant.config_entries import SOURCE_REAUTH, SOURCE_USER
-from homeassistant.const import CONF_PASSWORD
+from homeassistant.const import CONF_API_TOKEN, CONF_EMAIL, CONF_PASSWORD, CONF_REGION
 from homeassistant.core import HomeAssistant
 from homeassistant.data_entry_flow import FlowResultType
 
@@ -50,11 +54,11 @@ async def test_form(hass: HomeAssistant) -> None:
         assert result["type"] == FlowResultType.CREATE_ENTRY
         assert result["title"] == "sample@gmail.com"
         assert result["data"] == {
-            "region": "europe",
-            "username": "sample@gmail.com",
-            "api_token": "api_token",
-            "expiry": 100,
-            "refresh": "refresh_token",
+            CONF_REGION: "europe",
+            CONF_EMAIL: "sample@gmail.com",
+            CONF_API_TOKEN: "api_token",
+            CONF_OWLET_EXPIRY: 100,
+            CONF_OWLET_REFRESH: "refresh_token",
         }
 
 
@@ -91,7 +95,7 @@ async def test_flow_wrong_email(hass: HomeAssistant) -> None:
             user_input=CONF_INPUT,
         )
         assert result["type"] == FlowResultType.FORM
-        assert result["errors"] == {"username": "invalid_email"}
+        assert result["errors"] == {"email": "invalid_email"}
 
 
 async def test_flow_credentials_error(hass: HomeAssistant) -> None:
@@ -180,7 +184,7 @@ async def test_reauth_success(hass: HomeAssistant) -> None:
 
 
 async def test_reauth_invalid_password(hass: HomeAssistant) -> None:
-    """Test reauth with invalid password errir."""
+    """Test reauth with invalid password error."""
     entry = await async_init_integration(hass, skip_setup=True)
 
     result = await hass.config_entries.flow.async_init(

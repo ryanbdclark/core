@@ -4,14 +4,22 @@
       "user": {
         "data": {
           "region": "Region",
-          "username": "Email",
+          "email": "[%key:common::config_flow::data::email%]",
           "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "region": "Select your region",
+          "email": "Enter the email associated with your Owlet account",
+          "password": "Enter your Owlet account password"
         }
       },
       "reauth_confirm": {
         "title": "Reauthentiaction required for Owlet",
         "data": {
           "password": "[%key:common::config_flow::data::password%]"
+        },
+        "data_description": {
+          "password": "Enter your Owlet account password"
         }
       }
     },

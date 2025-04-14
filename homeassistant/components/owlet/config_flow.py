@@ -17,7 +17,7 @@ import voluptuous as vol
 
 from homeassistant import config_entries, exceptions
 from homeassistant.config_entries import ConfigEntry, ConfigFlowResult
-from homeassistant.const import CONF_PASSWORD, CONF_REGION, CONF_USERNAME
+from homeassistant.const import CONF_EMAIL, CONF_PASSWORD, CONF_REGION
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import DOMAIN
@@ -27,7 +27,7 @@ _LOGGER = logging.getLogger(__name__)
 STEP_USER_DATA_SCHEMA = vol.Schema(
     {
         vol.Required(CONF_REGION): vol.In(["europe", "world"]),
-        vol.Required(CONF_USERNAME): str,
+        vol.Required(CONF_EMAIL): str,
         vol.Required(CONF_PASSWORD): str,
     }
 )
@@ -50,12 +50,12 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
         if user_input is not None:
             owlet_api = OwletAPI(
                 region=user_input[CONF_REGION],
-                user=user_input[CONF_USERNAME],
+                user=user_input[CONF_EMAIL],
                 password=user_input[CONF_PASSWORD],
                 session=async_get_clientsession(self.hass),
             )
 
-            await self.async_set_unique_id(user_input[CONF_USERNAME].lower())
+            await self.async_set_unique_id(user_input[CONF_EMAIL].lower())
             self._abort_if_unique_id_configured()
 
             try:
@@ -65,7 +65,7 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             except OwletDevicesError:
                 errors["base"] = "no_devices"
             except OwletEmailError:
-                errors[CONF_USERNAME] = "invalid_email"
+                errors[CONF_EMAIL] = "invalid_email"
             except OwletPasswordError:
                 errors[CONF_PASSWORD] = "invalid_password"
             except OwletCredentialsError:
@@ -75,10 +75,10 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 errors["base"] = "unknown"
             else:
                 return self.async_create_entry(
-                    title=user_input[CONF_USERNAME],
+                    title=user_input[CONF_EMAIL],
                     data={
                         CONF_REGION: user_input[CONF_REGION],
-                        CONF_USERNAME: user_input[CONF_USERNAME],
+                        CONF_EMAIL: user_input[CONF_EMAIL],
                         **token,
                     },
                 )
@@ -107,7 +107,7 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
             entry_data = self.reauth_entry.data
             owlet_api = OwletAPI(
                 entry_data[CONF_REGION],
-                entry_data[CONF_USERNAME],
+                entry_data[CONF_EMAIL],
                 user_input[CONF_PASSWORD],
                 session=async_get_clientsession(self.hass),
             )

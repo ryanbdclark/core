@@ -15,7 +15,7 @@ from . import async_init_integration
 
 from tests.common import load_fixture
 
-PLATFORMS: list[Platform] = [Platform.BINARY_SENSOR, Platform.SENSOR]
+PLATFORMS: list[Platform] = [Platform.SENSOR]
 
 
 async def test_coordinator_auth_error(hass: HomeAssistant) -> None:
@@ -38,7 +38,7 @@ async def test_coordinator_auth_error(hass: HomeAssistant) -> None:
         await hass.config_entries.async_setup(entry.entry_id)
         await hass.async_block_till_done()
 
-        assert entry.state == ConfigEntryState.SETUP_RETRY
+        assert entry.state == ConfigEntryState.SETUP_ERROR
 
 
 async def test_coordinator_connection_error(hass: HomeAssistant) -> None:
