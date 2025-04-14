@@ -2214,7 +2214,7 @@ pyotp==2.8.0
 pyoverkiz==1.16.5
 
 # homeassistant.components.owlet
-pyowletapi==2025.4.1
+pyowletapi==2025.4.3
 
 # homeassistant.components.onewire
 pyownet==0.10.0.post1
