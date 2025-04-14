@@ -25,6 +25,8 @@ from .const import SLEEP_STATES
 from .coordinator import OwletCoordinator
 from .entity import OwletBaseEntity
 
+PARALLEL_UPDATES = 0
+
 
 @dataclass(kw_only=True, frozen=True)
 class OwletSensorEntityDescription(SensorEntityDescription):

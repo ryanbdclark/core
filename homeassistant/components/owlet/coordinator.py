@@ -47,11 +47,13 @@ class OwletCoordinator(DataUpdateCoordinator):
                     self.config_entry,
                     data={**self.config_entry.data, **properties["tokens"]},
                 )
-        except OwletAuthenticationError as err:
+        except OwletAuthenticationError as auth_err:
             raise ConfigEntryAuthFailed(
                 f"Authentication failed for {self.config_entry.data[CONF_EMAIL]}"
-            ) from err
-        except (OwletError, OwletConnectionError) as err:
-            raise UpdateFailed(err) from err
+            ) from auth_err
+        except (OwletError, OwletConnectionError) as conn_err:
+            raise UpdateFailed(
+                f"Unable to connect to Owlet servers: {conn_err}"
+            ) from conn_err
         else:
             return properties["properties"]
