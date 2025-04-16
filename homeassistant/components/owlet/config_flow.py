@@ -4,7 +4,7 @@ from __future__ import annotations
 
 from collections.abc import Mapping
 import logging
-from typing import Any
+from typing import Any, cast
 
 from pyowletapi.api import OwletAPI
 from pyowletapi.exceptions import OwletCredentialsError, OwletDevicesError
@@ -26,6 +26,8 @@ STEP_USER_DATA_SCHEMA = vol.Schema(
         vol.Required(CONF_PASSWORD): str,
     }
 )
+
+STEP_REAUTH_RECONFIG_SCHEMA = vol.Schema({vol.Required(CONF_PASSWORD): str})
 
 
 class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
@@ -65,13 +67,16 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 _LOGGER.exception("Unexpected exception")
                 errors["base"] = "unknown"
             else:
+                entry_data = {
+                    CONF_REGION: user_input[CONF_REGION],
+                    CONF_EMAIL: user_input[CONF_EMAIL],
+                }
+                if token is not None:
+                    entry_data.update(token)
+
                 return self.async_create_entry(
                     title=user_input[CONF_EMAIL],
-                    data={
-                        CONF_REGION: user_input[CONF_REGION],
-                        CONF_EMAIL: user_input[CONF_EMAIL],
-                        **token,
-                    },
+                    data=entry_data,
                 )
 
         return self.async_show_form(
@@ -121,7 +126,47 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
 
         return self.async_show_form(
             step_id="reauth_confirm",
-            data_schema=vol.Schema({vol.Required(CONF_PASSWORD): str}),
+            data_schema=STEP_REAUTH_RECONFIG_SCHEMA,
+            errors=errors,
+        )
+
+    async def async_step_reconfigure(
+        self, user_input: dict[str, Any] | None = None
+    ) -> ConfigFlowResult:
+        """Dialog that allows the user to reconfigure the integration."""
+        errors: dict[str, str] = {}
+
+        reconfigure_entry = self._get_reconfigure_entry()
+
+        if user_input is not None:
+            owlet_api = OwletAPI(
+                str(reconfigure_entry.data.get(CONF_REGION)),
+                str(reconfigure_entry.data.get(CONF_EMAIL)),
+                user_input[CONF_PASSWORD],
+                session=async_get_clientsession(self.hass),
+            )
+            try:
+                if token := await owlet_api.authenticate():
+                    email = cast(str, reconfigure_entry.data.get(CONF_EMAIL))
+                    await self.async_set_unique_id(email.lower())
+                    return self.async_update_reload_and_abort(
+                        reconfigure_entry,
+                        data_updates={
+                            **token,
+                            CONF_PASSWORD: user_input[CONF_PASSWORD],
+                        },
+                    )
+            except OwletDevicesError:
+                errors["base"] = "no_devices"
+            except OwletCredentialsError:
+                errors["base"] = "invalid_credentials"
+            except Exception:  # pylint: disable=broad-except
+                _LOGGER.exception("Unexpected exception")
+                errors["base"] = "unknown"
+
+        return self.async_show_form(
+            step_id="reconfigure",
+            data_schema=STEP_REAUTH_RECONFIG_SCHEMA,
             errors=errors,
         )
 

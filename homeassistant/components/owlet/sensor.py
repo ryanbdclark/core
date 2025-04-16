@@ -4,13 +4,15 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 
+from pyowletapi.const import PropertyKey
+
 from homeassistant.components.sensor import (
+    EntityCategory,
     SensorDeviceClass,
     SensorEntity,
     SensorEntityDescription,
     SensorStateClass,
 )
-from homeassistant.config_entries import ConfigEntry
 from homeassistant.const import (
     PERCENTAGE,
     SIGNAL_STRENGTH_DECIBELS_MILLIWATT,
@@ -22,7 +24,7 @@ from homeassistant.helpers.entity_platform import AddConfigEntryEntitiesCallback
 from homeassistant.helpers.typing import StateType
 
 from .const import SLEEP_STATES
-from .coordinator import OwletCoordinator
+from .coordinator import OwletConfigEntry, OwletCoordinator
 from .entity import OwletBaseEntity
 
 PARALLEL_UPDATES = 0
@@ -33,6 +35,7 @@ class OwletSensorEntityDescription(SensorEntityDescription):
     """Represent the owlet sensor entity description."""
 
     available_during_charging: bool
+    key: PropertyKey
 
 
 SENSORS: tuple[OwletSensorEntityDescription, ...] = (
@@ -73,6 +76,7 @@ SENSORS: tuple[OwletSensorEntityDescription, ...] = (
         translation_key="signalstrength",
         native_unit_of_measurement=SIGNAL_STRENGTH_DECIBELS_MILLIWATT,
         device_class=SensorDeviceClass.SIGNAL_STRENGTH,
+        entity_category=EntityCategory.DIAGNOSTIC,
         state_class=SensorStateClass.MEASUREMENT,
         available_during_charging=True,
     ),
@@ -105,7 +109,7 @@ SENSORS: tuple[OwletSensorEntityDescription, ...] = (
 
 async def async_setup_entry(
     hass: HomeAssistant,
-    config_entry: ConfigEntry,
+    config_entry: OwletConfigEntry,
     async_add_entities: AddConfigEntryEntitiesCallback,
 ) -> None:
     """Set up the owlet sensors from config entry."""
@@ -115,15 +119,17 @@ async def async_setup_entry(
     sensors = []
 
     for coordinator in coordinators:
-        sensors = [
-            OwletSensor(coordinator, sensor)
-            for sensor in SENSORS
-            if sensor.key in coordinator.data
-        ]
+        sensors.extend(
+            [
+                OwletSensor(coordinator, sensor)
+                for sensor in SENSORS
+                if sensor.key in coordinator.data.sensors
+            ]
+        )
 
-        if OwletSleepSensor.entity_description.key in coordinator.data:
+        if OwletSleepSensor.entity_description.key in coordinator.data.sensors:
             sensors.append(OwletSleepSensor(coordinator))
-        if OwletOxygenAverageSensor.entity_description.key in coordinator.data:
+        if OwletOxygenAverageSensor.entity_description.key in coordinator.data.sensors:
             sensors.append(OwletOxygenAverageSensor(coordinator))
 
     async_add_entities(sensors)
@@ -146,15 +152,15 @@ class OwletSensor(OwletBaseEntity, SensorEntity):
     def available(self) -> bool:
         """Return if entity is available."""
         return super().available and (
-            not self.coordinator.data["charging"]
+            not self.coordinator.data.sensors["charging"]
             or self.entity_description.available_during_charging
         )
 
     @property
-    def native_value(self) -> StateType:
+    def native_value(self) -> int | float | str | None:
         """Return sensor value."""
 
-        return self.coordinator.data[self.entity_description.key]
+        return self.coordinator.data.sensors[self.entity_description.key]
 
 
 class OwletSleepSensor(OwletSensor):
@@ -178,7 +184,7 @@ class OwletSleepSensor(OwletSensor):
     @property
     def native_value(self) -> StateType:
         """Return sensor value."""
-        return SLEEP_STATES[self.coordinator.data["sleep_state"]]
+        return SLEEP_STATES[self.coordinator.data.sensors["sleep_state"]]
 
 
 class OwletOxygenAverageSensor(OwletSensor):
@@ -206,11 +212,11 @@ class OwletOxygenAverageSensor(OwletSensor):
         return (
             super().available
             and (
-                not self.coordinator.data["charging"]
+                not self.coordinator.data.sensors["charging"]
                 or self.entity_description.available_during_charging
             )
             and (
-                self.coordinator.data["oxygen_10_av"] >= 0
-                and self.coordinator.data["oxygen_10_av"] <= 100
+                self.coordinator.data.sensors["oxygen_10_av"] >= 0
+                and self.coordinator.data.sensors["oxygen_10_av"] <= 100
             )
         )

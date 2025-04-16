@@ -10,26 +10,23 @@ from pyowletapi.exceptions import (
     OwletAuthenticationError,
     OwletConnectionError,
     OwletDevicesError,
-    OwletEmailError,
-    OwletPasswordError,
 )
 from pyowletapi.sock import Sock
 
-from homeassistant.config_entries import ConfigEntry
-from homeassistant.const import CONF_API_TOKEN, CONF_REGION, CONF_USERNAME, Platform
+from homeassistant.const import CONF_API_TOKEN, CONF_EMAIL, CONF_REGION, Platform
 from homeassistant.core import HomeAssistant
 from homeassistant.exceptions import ConfigEntryAuthFailed, ConfigEntryNotReady
 from homeassistant.helpers.aiohttp_client import async_get_clientsession
 
 from .const import CONF_OWLET_EXPIRY, CONF_OWLET_REFRESH, DOMAIN, SUPPORTED_VERSIONS
-from .coordinator import OwletCoordinator
+from .coordinator import OwletConfigEntry, OwletCoordinator
 
 PLATFORMS: list[Platform] = [Platform.SENSOR]
 
 _LOGGER = logging.getLogger(__name__)
 
 
-async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
+async def async_setup_entry(hass: HomeAssistant, entry: OwletConfigEntry) -> bool:
     """Set up Owlet Smart Sock from a config entry."""
     hass.data.setdefault(DOMAIN, {})
 
@@ -47,15 +44,15 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
 
         devices = await owlet_api.get_devices(SUPPORTED_VERSIONS)
 
-    except (OwletAuthenticationError, OwletEmailError, OwletPasswordError) as err:
+    except OwletAuthenticationError as err:
         _LOGGER.error("Credentials no longer valid, please setup owlet again")
         raise ConfigEntryAuthFailed(
-            f"Credentials expired for {entry.data[CONF_USERNAME]}"
+            f"Credentials expired for {entry.data[CONF_EMAIL]}"
         ) from err
 
     except OwletConnectionError as err:
         raise ConfigEntryNotReady(
-            f"Error connecting to {entry.data[CONF_USERNAME]}"
+            f"Error connecting to {entry.data[CONF_EMAIL]}"
         ) from err
 
     except OwletDevicesError:
@@ -88,6 +85,6 @@ async def async_setup_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
     return True
 
 
-async def async_unload_entry(hass: HomeAssistant, entry: ConfigEntry) -> bool:
+async def async_unload_entry(hass: HomeAssistant, entry: OwletConfigEntry) -> bool:
     """Unload a config entry."""
     return await hass.config_entries.async_unload_platforms(entry, PLATFORMS)

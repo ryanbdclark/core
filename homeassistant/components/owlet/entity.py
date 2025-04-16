@@ -26,8 +26,9 @@ class OwletBaseEntity(CoordinatorEntity[OwletCoordinator], Entity):
         """Return the device info of the device."""
         return DeviceInfo(
             identifiers={(DOMAIN, self.sock.serial)},
-            name="Owlet Baby Care Sock",
+            name=f"Owlet Sock {self.sock.serial}",
             manufacturer=MANUFACTURER,
+            configuration_url="https://my.owletcare.com/",
             model=self.sock.model,
             sw_version=self.sock.sw_version,
             hw_version=f"{self.sock.version}r{self.sock.revision}",

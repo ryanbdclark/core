@@ -47,7 +47,10 @@ rules:
 
   # Gold
   devices: done
-  diagnostics: todo
+  diagnostics:
+    status: todo
+    comment: |
+      1 sensor is set as diagnostic however to keep to PR to one platform it is still in sensor.py currently
   discovery-update-info:
     status: exempt
     comment: |
@@ -61,7 +64,7 @@ rules:
   docs-known-limitations: done
   docs-supported-devices: done
   docs-supported-functions: done
-  docs-troubleshooting: todo
+  docs-troubleshooting: done
   docs-use-cases: done
   dynamic-devices: done
   entity-category: done
@@ -70,13 +73,13 @@ rules:
   entity-translations: done
   exception-translations: done
   icon-translations: done
-  reconfiguration-flow: todo
+  reconfiguration-flow: done
   repair-issues:
     status: exempt
     comment: |
       No current issues to repair.
-  stale-devices: todo
+  stale-devices: done
   # Platinum
   async-dependency: done
   inject-websession: done
-  strict-typing: todo
+  strict-typing: done
