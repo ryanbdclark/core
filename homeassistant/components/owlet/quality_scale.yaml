@@ -47,10 +47,7 @@ rules:
 
   # Gold
   devices: done
-  diagnostics:
-    status: todo
-    comment: |
-      1 sensor is set as diagnostic however to keep to PR to one platform it is still in sensor.py currently
+  diagnostics: done
   discovery-update-info:
     status: exempt
     comment: |
