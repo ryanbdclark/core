@@ -32,4 +32,5 @@ class OwletBaseEntity(CoordinatorEntity[OwletCoordinator], Entity):
             model=self.sock.model,
             sw_version=self.sock.sw_version,
             hw_version=f"{self.sock.version}r{self.sock.revision}",
+            serial_number=self.sock.serial,
         )

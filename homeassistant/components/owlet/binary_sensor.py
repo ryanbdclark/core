@@ -113,11 +113,11 @@ async def async_setup_entry(
             [
                 OwletBinarySensor(coordinator, sensor)
                 for sensor in SENSORS
-                if sensor.key in coordinator.sock.properties
+                if sensor.key in coordinator.data.sensors
             ]
         )
 
-        if OwletAwakeSensor.entity_description.key in coordinator.sock.properties:
+        if OwletAwakeSensor.entity_description.key in coordinator.data.sensors:
             sensors.append(OwletAwakeSensor(coordinator))
 
     async_add_entities(sensors)
@@ -140,7 +140,7 @@ class OwletBinarySensor(OwletBaseEntity, BinarySensorEntity):
     def available(self) -> bool:
         """Return if entity is available."""
         return super().available and (
-            not self.sock.properties["charging"]
+            not self.coordinator.data.sensors["charging"]
             or self.entity_description.available_during_charging
         )
 

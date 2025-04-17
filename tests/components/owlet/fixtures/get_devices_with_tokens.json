@@ -29,8 +29,8 @@
     }
   ],
   "tokens": {
-    "api_token": "new_api_token",
-    "expiry": 200,
-    "refresh": "new_refresh_token"
+    "api_token": "123456789",
+    "expiry": 99999999999,
+    "refresh": "ABCDEFGHIJ"
   }
 }

@@ -19,7 +19,6 @@ from tests.common import MockConfigEntry, snapshot_platform
     [{"properties": "update_properties_asleep.json", "devices": "get_devices.json"}],
     indirect=True,
 )
-@pytest.mark.usefixtures("entity_registry_enabled_by_default")
 async def test_sensors_asleep(
     hass: HomeAssistant,
     mock_owlet_entry: MockConfigEntry,
@@ -27,7 +26,7 @@ async def test_sensors_asleep(
     entity_registry: er.EntityRegistry,
 ) -> None:
     """Test sensor values."""
-    await setup_platform(hass, mock_owlet_entry, [Platform.SENSOR])
+    await setup_platform(hass, mock_owlet_entry, [Platform.BINARY_SENSOR])
     await snapshot_platform(hass, entity_registry, snapshot, mock_owlet_entry.entry_id)
 
 
@@ -36,7 +35,6 @@ async def test_sensors_asleep(
     [{"properties": "update_properties_awake.json", "devices": "get_devices.json"}],
     indirect=True,
 )
-@pytest.mark.usefixtures("entity_registry_enabled_by_default")
 async def test_sensors_awake(
     hass: HomeAssistant,
     mock_owlet_entry: MockConfigEntry,
@@ -44,7 +42,7 @@ async def test_sensors_awake(
     entity_registry: er.EntityRegistry,
 ) -> None:
     """Test sensor values."""
-    await setup_platform(hass, mock_owlet_entry, [Platform.SENSOR])
+    await setup_platform(hass, mock_owlet_entry, [Platform.BINARY_SENSOR])
     await snapshot_platform(hass, entity_registry, snapshot, mock_owlet_entry.entry_id)
 
 
@@ -53,7 +51,6 @@ async def test_sensors_awake(
     [{"properties": "update_properties_charging.json", "devices": "get_devices.json"}],
     indirect=True,
 )
-@pytest.mark.usefixtures("entity_registry_enabled_by_default")
 async def test_sensors_charging(
     hass: HomeAssistant,
     mock_owlet_entry: MockConfigEntry,
@@ -61,7 +58,7 @@ async def test_sensors_charging(
     entity_registry: er.EntityRegistry,
 ) -> None:
     """Test sensor values."""
-    await setup_platform(hass, mock_owlet_entry, [Platform.SENSOR])
+    await setup_platform(hass, mock_owlet_entry, [Platform.BINARY_SENSOR])
     await snapshot_platform(hass, entity_registry, snapshot, mock_owlet_entry.entry_id)
 
 
@@ -70,7 +67,6 @@ async def test_sensors_charging(
     [{"properties": "update_properties_v2.json", "devices": "get_devices.json"}],
     indirect=True,
 )
-@pytest.mark.usefixtures("entity_registry_enabled_by_default")
 async def test_sensors_v2(
     hass: HomeAssistant,
     mock_owlet_entry: MockConfigEntry,
@@ -78,5 +74,5 @@ async def test_sensors_v2(
     entity_registry: er.EntityRegistry,
 ) -> None:
     """Test sensor values."""
-    await setup_platform(hass, mock_owlet_entry, [Platform.SENSOR])
+    await setup_platform(hass, mock_owlet_entry, [Platform.BINARY_SENSOR])
     await snapshot_platform(hass, entity_registry, snapshot, mock_owlet_entry.entry_id)

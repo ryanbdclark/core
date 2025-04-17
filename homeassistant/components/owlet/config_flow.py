@@ -123,6 +123,7 @@ class OwletConfigFlow(config_entries.ConfigFlow, domain=DOMAIN):
                 errors["base"] = "invalid_credentials"
             except Exception:  # pylint: disable=broad-except
                 _LOGGER.exception("Error reauthenticating")
+                errors["base"] = "unknown"
 
         return self.async_show_form(
             step_id="reauth_confirm",

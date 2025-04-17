@@ -45,6 +45,44 @@
     }
   },
   "entity": {
+    "binary_sensor": {
+      "charging": {
+        "name": "Charging"
+      },
+      "high_hr_alrt": {
+        "name": "High heart rate alert"
+      },
+      "low_hr_alrt": {
+        "name": "Low heart rate alert"
+      },
+      "high_ox_alrt": {
+        "name": "High oxygen alert"
+      },
+      "low_ox_alrt": {
+        "name": "Low oxygen alert"
+      },
+      "crit_ox_alrt": {
+        "name": "Critical oxygen alert"
+      },
+      "low_batt_alrt": {
+        "name": "Low battery alert"
+      },
+      "crit_batt_alrt": {
+        "name": "Critical battery alert"
+      },
+      "lost_pwr_alrt": {
+        "name": "Lost power alert"
+      },
+      "sock_discon_alrt": {
+        "name": "Sock disconnected alert"
+      },
+      "sock_off": {
+        "name": "Sock off"
+      },
+      "awake": {
+        "name": "Awake"
+      }
+    },
     "sensor": {
       "batterypercent": {
         "name": "Battery percentage"
@@ -81,6 +119,11 @@
       },
       "movementbucket": {
         "name": "Movement bucket"
+      }
+    },
+    "switch": {
+      "base_on": {
+        "name": "Base station on"
       }
     }
   }

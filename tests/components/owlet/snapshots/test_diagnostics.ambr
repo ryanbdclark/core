@@ -1,0 +1,67 @@
+# serializer version: 1
+# name: test_entry_diagnostics
+  dict({
+    'config_entry': dict({
+      'data': dict({
+        'api_token': '**REDACTED**',
+        'email': 'owlet_email@email.com',
+        'expiry': 99999999999,
+        'refresh': '**REDACTED**',
+        'region': 'europe',
+      }),
+      'disabled_by': None,
+      'discovery_keys': dict({
+      }),
+      'domain': 'owlet',
+      'entry_id': '01JS1B1KH82GN4MD5N7VWECMY2',
+      'minor_version': 1,
+      'options': dict({
+      }),
+      'pref_disable_new_entities': False,
+      'pref_disable_polling': False,
+      'source': 'user',
+      'subentries': list([
+      ]),
+      'title': 'owlet_email@email.com',
+      'unique_id': 'owlet_email@email.com',
+      'version': 1,
+    }),
+    'data': dict({
+      'SERIAL_NUMBER': dict({
+        'alert_paused_status': 0,
+        'alerts_mask': 0,
+        'base_battery_status': 4,
+        'base_station_on': 0,
+        'battery_minutes': 0.0,
+        'battery_percentage': 100.0,
+        'brick_status': 0,
+        'charging': 2,
+        'firmware_update_available': True,
+        'hardware_version': 'obl',
+        'heart_rate': 0.0,
+        'high_heart_rate_alert': False,
+        'high_oxygen_alert': False,
+        'last_updated': '2023/05/24 14:15:50',
+        'lost_power_alert': False,
+        'low_battery_alert': False,
+        'low_heart_rate_alert': False,
+        'low_oxygen_alert': False,
+        'monitoring_start_time': 0,
+        'movement': 0,
+        'movement_bucket': 0,
+        'oxygen_10_av': 255.0,
+        'oxygen_saturation': 0.0,
+        'ppg_log_file': True,
+        'readings_flag': 1,
+        'signal_strength': 34.0,
+        'skin_temperature': 0,
+        'sleep_state': 0,
+        'sock_connection': 2,
+        'sock_disconnected': False,
+        'sock_off': False,
+        'update_status': 0,
+        'wellness_alert': 0,
+      }),
+    }),
+  })
+# ---

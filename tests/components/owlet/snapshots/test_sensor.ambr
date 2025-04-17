@@ -1,0 +1,2109 @@
+# serializer version: 1
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.BATTERY: 'battery'>,
+    'original_icon': None,
+    'original_name': 'Battery percentage',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterypercent',
+    'unique_id': 'SERIAL_NUMBER-battery_percentage',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery percentage',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '100.0',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Battery remaining',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterymin',
+    'unique_id': 'SERIAL_NUMBER-battery_minutes',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery remaining',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:heart-pulse',
+    'original_name': 'Heart rate',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'heartrate',
+    'unique_id': 'SERIAL_NUMBER-heart_rate',
+    'unit_of_measurement': 'bpm',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Heart rate',
+      'icon': 'mdi:heart-pulse',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'bpm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:cursor-move',
+    'original_name': 'Movement',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movement',
+    'unique_id': 'SERIAL_NUMBER-movement',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement',
+      'icon': 'mdi:cursor-move',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:bucket-outline',
+    'original_name': 'Movement bucket',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movementbucket',
+    'unique_id': 'SERIAL_NUMBER-movement_bucket',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement bucket',
+      'icon': 'mdi:bucket-outline',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation',
+    'unique_id': 'SERIAL_NUMBER-oxygen_saturation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation 10 minute average',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation10a',
+    'unique_id': 'SERIAL_NUMBER-oxygen_10_av',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation 10 minute average',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.SIGNAL_STRENGTH: 'signal_strength'>,
+    'original_icon': None,
+    'original_name': 'Signal strength',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'signalstrength',
+    'unique_id': 'SERIAL_NUMBER-signal_strength',
+    'unit_of_measurement': 'dBm',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'signal_strength',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Signal strength',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'dBm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '34.0',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Skin temperature',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'skintemp',
+    'unique_id': 'SERIAL_NUMBER-skin_temperature',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Skin temperature',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.ENUM: 'enum'>,
+    'original_icon': None,
+    'original_name': 'Sleep state',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sleepstate',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'enum',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sleep state',
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.BATTERY: 'battery'>,
+    'original_icon': None,
+    'original_name': 'Battery percentage',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterypercent',
+    'unique_id': 'SERIAL_NUMBER-battery_percentage',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery percentage',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '100.0',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Battery remaining',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterymin',
+    'unique_id': 'SERIAL_NUMBER-battery_minutes',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery remaining',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:heart-pulse',
+    'original_name': 'Heart rate',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'heartrate',
+    'unique_id': 'SERIAL_NUMBER-heart_rate',
+    'unit_of_measurement': 'bpm',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Heart rate',
+      'icon': 'mdi:heart-pulse',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'bpm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:cursor-move',
+    'original_name': 'Movement',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movement',
+    'unique_id': 'SERIAL_NUMBER-movement',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement',
+      'icon': 'mdi:cursor-move',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:bucket-outline',
+    'original_name': 'Movement bucket',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movementbucket',
+    'unique_id': 'SERIAL_NUMBER-movement_bucket',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement bucket',
+      'icon': 'mdi:bucket-outline',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation',
+    'unique_id': 'SERIAL_NUMBER-oxygen_saturation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation 10 minute average',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation10a',
+    'unique_id': 'SERIAL_NUMBER-oxygen_10_av',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation 10 minute average',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.SIGNAL_STRENGTH: 'signal_strength'>,
+    'original_icon': None,
+    'original_name': 'Signal strength',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'signalstrength',
+    'unique_id': 'SERIAL_NUMBER-signal_strength',
+    'unit_of_measurement': 'dBm',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'signal_strength',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Signal strength',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'dBm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '34.0',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Skin temperature',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'skintemp',
+    'unique_id': 'SERIAL_NUMBER-skin_temperature',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Skin temperature',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.ENUM: 'enum'>,
+    'original_icon': None,
+    'original_name': 'Sleep state',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sleepstate',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'enum',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sleep state',
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.BATTERY: 'battery'>,
+    'original_icon': None,
+    'original_name': 'Battery percentage',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterypercent',
+    'unique_id': 'SERIAL_NUMBER-battery_percentage',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery percentage',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '100.0',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Battery remaining',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterymin',
+    'unique_id': 'SERIAL_NUMBER-battery_minutes',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery remaining',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:heart-pulse',
+    'original_name': 'Heart rate',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'heartrate',
+    'unique_id': 'SERIAL_NUMBER-heart_rate',
+    'unit_of_measurement': 'bpm',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Heart rate',
+      'icon': 'mdi:heart-pulse',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'bpm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:cursor-move',
+    'original_name': 'Movement',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movement',
+    'unique_id': 'SERIAL_NUMBER-movement',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement',
+      'icon': 'mdi:cursor-move',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:bucket-outline',
+    'original_name': 'Movement bucket',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movementbucket',
+    'unique_id': 'SERIAL_NUMBER-movement_bucket',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement bucket',
+      'icon': 'mdi:bucket-outline',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation',
+    'unique_id': 'SERIAL_NUMBER-oxygen_saturation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation 10 minute average',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation10a',
+    'unique_id': 'SERIAL_NUMBER-oxygen_10_av',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation 10 minute average',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.SIGNAL_STRENGTH: 'signal_strength'>,
+    'original_icon': None,
+    'original_name': 'Signal strength',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'signalstrength',
+    'unique_id': 'SERIAL_NUMBER-signal_strength',
+    'unit_of_measurement': 'dBm',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'signal_strength',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Signal strength',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'dBm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '34.0',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Skin temperature',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'skintemp',
+    'unique_id': 'SERIAL_NUMBER-skin_temperature',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Skin temperature',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.ENUM: 'enum'>,
+    'original_icon': None,
+    'original_name': 'Sleep state',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sleepstate',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'enum',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sleep state',
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.BATTERY: 'battery'>,
+    'original_icon': None,
+    'original_name': 'Battery percentage',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterypercent',
+    'unique_id': 'SERIAL_NUMBER-battery_percentage',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_percentage-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery percentage',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_percentage',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '100.0',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.DURATION: 'duration'>,
+    'original_icon': None,
+    'original_name': 'Battery remaining',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'batterymin',
+    'unique_id': 'SERIAL_NUMBER-battery_minutes',
+    'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_battery_remaining-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'duration',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Battery remaining',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTime.MINUTES: 'min'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_battery_remaining',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:heart-pulse',
+    'original_name': 'Heart rate',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'heartrate',
+    'unique_id': 'SERIAL_NUMBER-heart_rate',
+    'unit_of_measurement': 'bpm',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_heart_rate-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Heart rate',
+      'icon': 'mdi:heart-pulse',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'bpm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_heart_rate',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:cursor-move',
+    'original_name': 'Movement',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movement',
+    'unique_id': 'SERIAL_NUMBER-movement',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement',
+      'icon': 'mdi:cursor-move',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:bucket-outline',
+    'original_name': 'Movement bucket',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'movementbucket',
+    'unique_id': 'SERIAL_NUMBER-movement_bucket',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_movement_bucket-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Movement bucket',
+      'icon': 'mdi:bucket-outline',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_movement_bucket',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation',
+    'unique_id': 'SERIAL_NUMBER-oxygen_saturation',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:leaf',
+    'original_name': 'O2 saturation 10 minute average',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'o2saturation10a',
+    'unique_id': 'SERIAL_NUMBER-oxygen_10_av',
+    'unit_of_measurement': '%',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_o2_saturation_10_minute_average-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER O2 saturation 10 minute average',
+      'icon': 'mdi:leaf',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': '%',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_o2_saturation_10_minute_average',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': <EntityCategory.DIAGNOSTIC: 'diagnostic'>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.SIGNAL_STRENGTH: 'signal_strength'>,
+    'original_icon': None,
+    'original_name': 'Signal strength',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'signalstrength',
+    'unique_id': 'SERIAL_NUMBER-signal_strength',
+    'unit_of_measurement': 'dBm',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_signal_strength-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'signal_strength',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Signal strength',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': 'dBm',
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_signal_strength',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': '34.0',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.TEMPERATURE: 'temperature'>,
+    'original_icon': None,
+    'original_name': 'Skin temperature',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'skintemp',
+    'unique_id': 'SERIAL_NUMBER-skin_temperature',
+    'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_skin_temperature-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'temperature',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Skin temperature',
+      'state_class': <SensorStateClass.MEASUREMENT: 'measurement'>,
+      'unit_of_measurement': <UnitOfTemperature.CELSIUS: '°C'>,
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_skin_temperature',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': dict({
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'sensor',
+    'entity_category': None,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <SensorDeviceClass.ENUM: 'enum'>,
+    'original_icon': None,
+    'original_name': 'Sleep state',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sleepstate',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][sensor.owlet_sock_serial_number_sleep_state-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'enum',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sleep state',
+      'options': list([
+        'unknown',
+        'awake',
+        'light_sleep',
+        'deep_sleep',
+      ]),
+    }),
+    'context': <ANY>,
+    'entity_id': 'sensor.owlet_sock_serial_number_sleep_state',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---

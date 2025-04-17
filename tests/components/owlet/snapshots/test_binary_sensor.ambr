@@ -1,0 +1,1921 @@
+# serializer version: 1
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:sleep',
+    'original_name': 'Awake',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'awake',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Awake',
+      'icon': 'mdi:sleep',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.BATTERY_CHARGING: 'battery_charging'>,
+    'original_icon': None,
+    'original_name': 'Charging',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'charging',
+    'unique_id': 'SERIAL_NUMBER-charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery_charging',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Lost power alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'lost_pwr_alrt',
+    'unique_id': 'SERIAL_NUMBER-lost_power_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Lost power alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low battery alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_batt_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_battery_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low battery alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Sock disconnected alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_discon_alrt',
+    'unique_id': 'SERIAL_NUMBER-sock_disconnected',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock disconnected alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.POWER: 'power'>,
+    'original_icon': None,
+    'original_name': 'Sock off',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_off',
+    'unique_id': 'SERIAL_NUMBER-sock_off',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_asleep[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'power',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock off',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:sleep',
+    'original_name': 'Awake',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'awake',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Awake',
+      'icon': 'mdi:sleep',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.BATTERY_CHARGING: 'battery_charging'>,
+    'original_icon': None,
+    'original_name': 'Charging',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'charging',
+    'unique_id': 'SERIAL_NUMBER-charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery_charging',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Lost power alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'lost_pwr_alrt',
+    'unique_id': 'SERIAL_NUMBER-lost_power_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Lost power alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low battery alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_batt_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_battery_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low battery alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Sock disconnected alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_discon_alrt',
+    'unique_id': 'SERIAL_NUMBER-sock_disconnected',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock disconnected alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.POWER: 'power'>,
+    'original_icon': None,
+    'original_name': 'Sock off',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_off',
+    'unique_id': 'SERIAL_NUMBER-sock_off',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_awake[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'power',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock off',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:sleep',
+    'original_name': 'Awake',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'awake',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Awake',
+      'icon': 'mdi:sleep',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.BATTERY_CHARGING: 'battery_charging'>,
+    'original_icon': None,
+    'original_name': 'Charging',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'charging',
+    'unique_id': 'SERIAL_NUMBER-charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery_charging',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Lost power alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'lost_pwr_alrt',
+    'unique_id': 'SERIAL_NUMBER-lost_power_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Lost power alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low battery alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_batt_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_battery_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low battery alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Sock disconnected alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_discon_alrt',
+    'unique_id': 'SERIAL_NUMBER-sock_disconnected',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock disconnected alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.POWER: 'power'>,
+    'original_icon': None,
+    'original_name': 'Sock off',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_off',
+    'unique_id': 'SERIAL_NUMBER-sock_off',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_charging[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'power',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock off',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': None,
+    'original_icon': 'mdi:sleep',
+    'original_name': 'Awake',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'awake',
+    'unique_id': 'SERIAL_NUMBER-sleep_state',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_awake-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Awake',
+      'icon': 'mdi:sleep',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_awake',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'unavailable',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.BATTERY_CHARGING: 'battery_charging'>,
+    'original_icon': None,
+    'original_name': 'Charging',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'charging',
+    'unique_id': 'SERIAL_NUMBER-charging',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_charging-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'battery_charging',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Charging',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_charging',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'on',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'High oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'high_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-high_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_high_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER High oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_high_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Lost power alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'lost_pwr_alrt',
+    'unique_id': 'SERIAL_NUMBER-lost_power_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_lost_power_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Lost power alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_lost_power_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low battery alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_batt_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_battery_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_battery_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low battery alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_battery_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low heart rate alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_hr_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_heart_rate_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_heart_rate_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low heart rate alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_heart_rate_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Low oxygen alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'low_ox_alrt',
+    'unique_id': 'SERIAL_NUMBER-low_oxygen_alert',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_low_oxygen_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Low oxygen alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_low_oxygen_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.SOUND: 'sound'>,
+    'original_icon': None,
+    'original_name': 'Sock disconnected alert',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_discon_alrt',
+    'unique_id': 'SERIAL_NUMBER-sock_disconnected',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_disconnected_alert-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'sound',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock disconnected alert',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_disconnected_alert',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-entry]
+  EntityRegistryEntrySnapshot({
+    'aliases': set({
+    }),
+    'area_id': None,
+    'capabilities': None,
+    'config_entry_id': <ANY>,
+    'config_subentry_id': <ANY>,
+    'device_class': None,
+    'device_id': <ANY>,
+    'disabled_by': None,
+    'domain': 'binary_sensor',
+    'entity_category': None,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'has_entity_name': True,
+    'hidden_by': None,
+    'icon': None,
+    'id': <ANY>,
+    'labels': set({
+    }),
+    'name': None,
+    'options': dict({
+    }),
+    'original_device_class': <BinarySensorDeviceClass.POWER: 'power'>,
+    'original_icon': None,
+    'original_name': 'Sock off',
+    'platform': 'owlet',
+    'previous_unique_id': None,
+    'supported_features': 0,
+    'translation_key': 'sock_off',
+    'unique_id': 'SERIAL_NUMBER-sock_off',
+    'unit_of_measurement': None,
+  })
+# ---
+# name: test_sensors_v2[mock_owlet_entry0][binary_sensor.owlet_sock_serial_number_sock_off-state]
+  StateSnapshot({
+    'attributes': ReadOnlyDict({
+      'device_class': 'power',
+      'friendly_name': 'Owlet Sock SERIAL_NUMBER Sock off',
+    }),
+    'context': <ANY>,
+    'entity_id': 'binary_sensor.owlet_sock_serial_number_sock_off',
+    'last_changed': <ANY>,
+    'last_reported': <ANY>,
+    'last_updated': <ANY>,
+    'state': 'off',
+  })
+# ---
